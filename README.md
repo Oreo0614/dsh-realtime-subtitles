@@ -6,7 +6,7 @@
 
 ## 安装
 
-要求：Windows 10/11、DeepSeek Harness（含 `speech-to-text` 实验性语音识别与翻译能力）、Python 3.10+。
+要求：Windows 10/11、DeepSeek Harness（含 `speech-to-text` 实验性语音识别与翻译能力）、Python 3.10+，以及已安装 Git（插件安装过程会通过 git 解析 GitHub 依赖）。
 
 ### 方式一：插件市场（推荐）
 
