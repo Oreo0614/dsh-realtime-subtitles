@@ -1,0 +1,23 @@
+- insert:
+    - id: realtime-subtitles-stt
+      name: '@deepseek-ai/dsh-experimental-speech-to-text'
+      config:
+        defaultProvider: sensevoice-local
+    - id: realtime-subtitles-sensevoice
+      name: '@deepseek-ai/dsh-experimental-speech-to-text-sensevoice'
+      config:
+        dataRoot: !!js dshHomePath('realtime-subtitles', 'sensevoice')
+        threads: 4
+        modelOrigins:
+          - https://hf-mirror.com
+          - https://huggingface.co
+    - id: realtime-subtitles-translator
+      name: '@deepseek-ai/dsh-experimental-translator'
+      config:
+        provider: bing
+        timeoutMs: 12000
+    - id: realtime-subtitles
+      name: 'dsh-realtime-subtitles'
+      config:
+        sourceLanguage: ja
+        overlay: true

@@ -1,0 +1,55 @@
+{
+  "name": "dsh-realtime-subtitles",
+  "version": "1.0.0",
+  "description": "Live system-audio subtitle recognition and translation for local video playback, packaged as a DeepSeek Harness plugin.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Oreo0614",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "subtitles",
+    "speech-to-text",
+    "whisper",
+    "translation"
+  ],
+  "homepage": "https://github.com/Oreo0614/dsh-realtime-subtitles#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oreo0614/dsh-realtime-subtitles.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Oreo0614/dsh-realtime-subtitles/issues"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "engine/engine.py",
+    "locale/*.json",
+    "icon.svg",
+    "docs/preview.png",
+    "LICENSE",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  }
+}

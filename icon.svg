@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Live subtitles">
+  <defs>
+    <linearGradient id="rts-bg" x1="8" y1="6" x2="56" y2="58" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2F7DF6"/>
+      <stop offset="1" stop-color="#7B5CFF"/>
+    </linearGradient>
+    <linearGradient id="rts-shine" x1="16" y1="14" x2="48" y2="44" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity=".28"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="56" height="56" rx="16" fill="url(#rts-bg)"/>
+  <rect x="4" y="4" width="56" height="56" rx="16" fill="url(#rts-shine)"/>
+  <rect x="13" y="18" width="38" height="24" rx="6" fill="#0B1020" fill-opacity=".78"/>
+  <rect x="19" y="25" width="26" height="3.4" rx="1.7" fill="#FFFFFF"/>
+  <rect x="19" y="31" width="17" height="3.4" rx="1.7" fill="#FFFFFF" fill-opacity=".78"/>
+  <path d="M22 48l-3.4 7.2c-.5 1.1.9 2 1.8 1.2L28 49.8" fill="#FFFFFF" fill-opacity=".92"/>
+  <circle cx="48.5" cy="15.5" r="7.5" fill="#FF6B6B"/>
+  <circle cx="48.5" cy="15.5" r="3.1" fill="#FFFFFF"/>
+  <path d="M48.5 19.2v3.2" stroke="#FF6B6B" stroke-width="2.2" stroke-linecap="round"/>
+</svg>

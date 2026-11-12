@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Live subtitles",
+    "description": "Follow system audio from local video playback, recognize Japanese or English speech, and show translated Chinese subtitles above the player."
+  }
+}
